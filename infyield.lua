@@ -4436,6 +4436,7 @@ CMDs[#CMDs + 1] = {NAME = 'noproximitypromptlimits / nopplimits', DESC = 'Sets a
 CMDs[#CMDs + 1] = {NAME = 'fireproximityprompts / firepp [name]', DESC = 'Uses all proximity prompts in a game or uses the optional name'}
 CMDs[#CMDs + 1] = {NAME = 'instantproximityprompts / instantpp', DESC = 'Disable the cooldown for proximity prompts'}
 CMDs[#CMDs + 1] = {NAME = 'showall / unhideall', DESC = 'Shows all players'}
+CMDs[#CMDs + 1] = {NAME = 'DemonCatShades', DESC = 'Shows all players'}
 CMDs[#CMDs + 1] = {NAME = 'uninstantproximityprompts / uninstantpp', DESC = 'Undo the cooldown removal'}
 CMDs[#CMDs + 1] = {NAME = 'tpunanchored / tpua [plr]', DESC = 'Teleports unanchored parts to a player'}
 CMDs[#CMDs + 1] = {NAME = 'animsunanchored / freezeua', DESC = 'Freezes unanchored parts'}
@@ -11202,6 +11203,9 @@ addcmd('hideall',{},function(args, speaker)
 end)
 addcmd('showall',{'unhideall'},function(args, speaker)
 	_G.HideAll = false
+end)
+addcmd('DemonCatShades',{},function(args, speaker)
+	print ("/e ThereIsNoWayDudeHow")
 end)
 addcmd('joinlogs',{'jlogs'},function(args, speaker)
 	chat.Visible = false
